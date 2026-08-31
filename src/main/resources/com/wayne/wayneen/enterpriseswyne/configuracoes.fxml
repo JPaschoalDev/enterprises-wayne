@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.*?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.wayne.wayneen.enterpriseswyne.controller.ConfiguracoesController"
+      fx:controller="com.wayne.wayneen.enterpriseswyne.Module10_Core.controller.ConfiguracoesController"
       spacing="10" alignment="TOP_CENTER" prefWidth="600" prefHeight="400" style="-fx-padding: 20;">
 
     <Label text="Configurações Administrativas" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>

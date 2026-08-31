@@ -6,7 +6,7 @@
 <?import java.lang.String?>
 
 <?import javafx.geometry.Insets?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.wayne.wayneen.enterpriseswyne.ChamadoController" prefWidth="800" prefHeight="600">
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.wayne.wayneen.enterpriseswyne.Module8_Suporte.controller.ChamadoController" prefWidth="800" prefHeight="600">
     <VBox spacing="10">
         <padding>
             <Insets top="15.0" right="15.0" bottom="15.0" left="15.0"/>

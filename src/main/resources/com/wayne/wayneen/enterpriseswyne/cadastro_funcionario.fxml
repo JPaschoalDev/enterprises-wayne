@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="766.0" prefWidth="938.0" stylesheets="estilo.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wayne.wayneen.enterpriseswyne.controller.CadastroController">
+<AnchorPane prefHeight="766.0" prefWidth="938.0" stylesheets="estilo.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wayne.wayneen.enterpriseswyne.Module1_RH.controller.CadastroController">
     <children>
         <VBox alignment="CENTER" layoutX="245.0" layoutY="185.0" prefHeight="400.0" prefWidth="550.0" spacing="10">
             <children>

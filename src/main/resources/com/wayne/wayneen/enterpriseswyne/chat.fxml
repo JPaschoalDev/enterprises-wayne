@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 <BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.wayne.wayneen.enterpriseswyne.controller.ChatController">
+            fx:controller="com.wayne.wayneen.enterpriseswyne.Module5_Comunicacao.controller.ChatController">
 
     <left>
         <VBox spacing="8" prefWidth="280" style="-fx-background-color: #f6f7fb;" BorderPane.alignment="CENTER">

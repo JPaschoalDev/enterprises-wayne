@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.wayne.wayneen.enterpriseswyne.controller.CalendarioController"
+            fx:controller="com.wayne.wayneen.enterpriseswyne.Module4_Eventos.controller.CalendarioController"
             prefHeight="600.0" prefWidth="800.0">
 
     <VBox spacing="10" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0"

@@ -6,7 +6,6 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.wayne.wayneen.enterpriseswyne.AvaliacaoController"
             prefHeight="500.0" prefWidth="700.0">
 
     <VBox fx:id="formAvaliacao" alignment="CENTER" spacing="10" layoutX="50" layoutY="30" prefWidth="600">
