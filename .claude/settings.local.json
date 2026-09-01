@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./mvnw compile *)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile 2>&1 | Select-Object -First 150)",
+      "PowerShell(java *)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile -q 2>&1 | Select-String -Pattern \"\\(ERROR|error|cannot|package\\)\" | Select-Object -First 80)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile -q 2>&1 | Select-Object -First 100)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile 2>&1 | Select-String -Pattern \"ERROR|BUILD|error:\" | Select-Object -First 50)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile 2>&1 | Select-String -Pattern \"ERROR|BUILD|error:|warning:\" | Select-Object -First 60)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile 2>&1 | Select-String -Pattern \"ERROR|BUILD|error:\" | Select-Object -First 60)",
+      "Bash(java -version)",
+      "Bash(chmod +x /tmp/reorganize.sh)",
+      "Bash(bash /tmp/reorganize.sh)",
+      "Read(//usr/**)",
+      "Read(//usr/local/**)",
+      "Bash(/c/Python314/python *)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile 2>&1 | Select-String -Pattern \"ERROR|error:|BUILD\" | Select-Object -First 60)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Users\\\\João Paschoal\\\\.jdks\\\\openjdk-25.0.2\"; $env:PATH = \"$env:JAVA_HOME\\\\bin;$env:PATH\"; cd \"C:\\\\JavaProjects\\\\enterprises-wayne\"; .\\\\mvnw.cmd compile 2>&1 | Select-String -Pattern \"ERROR|WARNING|BUILD|error:\" | Select-Object -First 80)"
+    ]
+  }
+}
