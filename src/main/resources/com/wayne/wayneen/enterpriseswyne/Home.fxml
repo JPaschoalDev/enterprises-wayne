@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="589.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wayne.wayneen.enterpriseswyne.controller.HomeController">
-
+<VBox prefHeight="589.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wayne.wayneen.enterpriseswyne.Module10_Core.controller.HomeController">
    <children>
       <Pane prefHeight="705.0" prefWidth="842.0">
          <children>

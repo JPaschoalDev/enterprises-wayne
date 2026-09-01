@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class ExportadorUtil {
 
     // Exportar para PDF
-    public static void gerarPDF(List<com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento> documentos, String destino) throws Exception {
+    public static void gerarPDF(List<Documento> documentos, String destino) throws Exception {
         Document document = new Document();
         PdfWriter.getInstance(document, new FileOutputStream(destino));
         document.open();
@@ -32,7 +32,7 @@ public class ExportadorUtil {
         adicionarCelulaCabecalho(tabela, "Validade");
         adicionarCelulaCabecalho(tabela, "Caminho do Arquivo");
 
-        for (com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento doc : documentos) {
+        for (Documento doc : documentos) {
             tabela.addCell(String.valueOf(doc.getId()));
             tabela.addCell(doc.getTitulo());
             tabela.addCell(doc.getDataValidade() != null ? doc.getDataValidade().toString() : "N/A");
@@ -51,7 +51,7 @@ public class ExportadorUtil {
     }
 
     // Exportar para Excel
-    public static void gerarExcel(List<com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento> documentos, String destino) throws IOException {
+    public static void gerarExcel(List<Documento> documentos, String destino) throws IOException {
         try (Workbook workbook = new XSSFWorkbook(); FileOutputStream fileOut = new FileOutputStream(destino)) {
             Sheet sheet = workbook.createSheet("Documentos");
             String[] colunas = {"ID", "Título", "Validade", "Caminho do Arquivo"};
@@ -69,7 +69,7 @@ public class ExportadorUtil {
             }
 
             int linha = 1;
-            for (com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento doc : documentos) {
+            for (Documento doc : documentos) {
                 Row row = sheet.createRow(linha++);
                 row.createCell(0).setCellValue(doc.getId());
                 row.createCell(1).setCellValue(doc.getTitulo());
@@ -86,12 +86,12 @@ public class ExportadorUtil {
     }
 
     // Exportar para CSV
-    public static void gerarCSV(List<com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento> documentos, String destino) throws IOException {
+    public static void gerarCSV(List<Documento> documentos, String destino) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(destino))) {
             writer.write("ID,Título,Validade,Caminho do Arquivo");
             writer.newLine();
 
-            for (com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento doc : documentos) {
+            for (Documento doc : documentos) {
                 writer.write(String.format("%d,\"%s\",%s,\"%s\"",
                         doc.getId(),
                         doc.getTitulo(),
@@ -103,14 +103,14 @@ public class ExportadorUtil {
     }
 
     // Filtro: apenas documentos com validade vencida
-    public static List<com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento> filtrarVencidos(List<com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento> documentos) {
+    public static List<Documento> filtrarVencidos(List<Documento> documentos) {
         return documentos.stream()
                 .filter(doc -> doc.getDataValidade() != null && doc.getDataValidade().isBefore(LocalDate.now()))
                 .collect(Collectors.toList());
     }
 
     // Exportar todos ao mesmo tempo
-    public static void exportarTudo(List<com.wayne.wayneen.enterpriseswyne.Module6_Documentos.model.Documento> documentos, String basePath) throws Exception {
+    public static void exportarTudo(List<Documento> documentos, String basePath) throws Exception {
         gerarPDF(documentos, basePath + "_documentos.pdf");
         gerarExcel(documentos, basePath + "_documentos.xlsx");
         gerarCSV(documentos, basePath + "_documentos.csv");
