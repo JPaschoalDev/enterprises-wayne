@@ -7,7 +7,8 @@
 <AnchorPane prefHeight="552.0" prefWidth="723.0"
             xmlns="http://javafx.com/javafx/17.0.2-ea"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.wayne.wayneen.enterpriseswyne.controller.LoginController">
+            fx:controller="com.wayne.wayneen.enterpriseswyne.Module10_Core.controller.LoginController">
+
 
     <children>
         <VBox alignment="CENTER" layoutX="180.0" layoutY="100.0" spacing="15.0">

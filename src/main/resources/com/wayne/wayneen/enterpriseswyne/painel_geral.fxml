@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="796.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wayne.wayneen.enterpriseswyne.controller.PainelGeralController">
+<AnchorPane prefHeight="796.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wayne.wayneen.enterpriseswyne.Module10_Core.controller.PainelGeralController">
    <AnchorPane layoutX="8.800000190734863" layoutY="6.4" prefHeight="786.0" prefWidth="1194.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="6.0">
       <children>
          <AnchorPane layoutY="29.0" prefHeight="727.0" prefWidth="1011.0">
